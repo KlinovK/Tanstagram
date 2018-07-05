@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tanstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="2Cl-RX-v1G">
+                                <rect key="frame" x="67" y="62" width="80" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-gM-9Er">
+                                <rect key="frame" x="168" y="62" width="80" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="23T-qd-8a2">
+                                <rect key="frame" x="256" y="102" width="80" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parallelogram" translatesAutoresizingMaskIntoConstraints="NO" id="S6O-mX-RzD">
+                                <rect key="frame" x="168" y="139" width="80" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="3Z9-9t-yAq">
+                                <rect key="frame" x="93" y="209" width="80" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="26i-21-czi">
+                                <rect key="frame" x="191" y="215" width="80" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="vX1-Ri-vph">
+                                <rect key="frame" x="279" y="209" width="80" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savePhotosButton" translatesAutoresizingMaskIntoConstraints="NO" id="iOt-VT-Txp">
+                                <rect key="frame" x="67.5" y="613" width="240" height="46"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HqH-Y9-Wf6"/>
+                                    <constraint firstAttribute="height" constant="46" id="LDa-b2-7Fj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="U2C-hA-brJ" appends="YES" id="wa9-d1-UBt"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iOt-VT-Txp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RBC-zN-38f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iOt-VT-Txp" secondAttribute="bottom" constant="8" id="gil-63-DKp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="outletCollectionOfImages" destination="2Cl-RX-v1G" collectionClass="NSMutableArray" id="oIx-G8-Xag"/>
+                        <outletCollection property="outletCollectionOfImages" destination="3Z9-9t-yAq" collectionClass="NSMutableArray" id="ltR-fW-Mci"/>
+                        <outletCollection property="outletCollectionOfImages" destination="UU3-gM-9Er" collectionClass="NSMutableArray" id="hbu-7m-QR7"/>
+                        <outletCollection property="outletCollectionOfImages" destination="S6O-mX-RzD" collectionClass="NSMutableArray" id="IHB-i5-Lp9"/>
+                        <outletCollection property="outletCollectionOfImages" destination="26i-21-czi" collectionClass="NSMutableArray" id="OGe-51-kZx"/>
+                        <outletCollection property="outletCollectionOfImages" destination="23T-qd-8a2" collectionClass="NSMutableArray" id="pfY-vp-KSD"/>
+                        <outletCollection property="outletCollectionOfImages" destination="vX1-Ri-vph" collectionClass="NSMutableArray" id="NCM-cA-52d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="U2C-hA-brJ">
+                    <connections>
+                        <action selector="saveToPhotoTapGesture:" destination="BYZ-38-t0r" id="1cz-kz-AQz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bigTriangle1" width="165" height="330"/>
+        <image name="bigTriangle2" width="331" height="166"/>
+        <image name="midTriangle" width="165" height="165"/>
+        <image name="parallelogram" width="246" height="83"/>
+        <image name="savePhotosButton" width="346" height="54"/>
+        <image name="smallTriangle1" width="164" height="83"/>
+        <image name="smallTriangle2" width="83" height="165"/>
+        <image name="square" width="164" height="164"/>
+    </resources>
 </document>
